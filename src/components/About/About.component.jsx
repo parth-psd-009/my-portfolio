@@ -1,16 +1,25 @@
 import React from "react";
 import "./About.styles.css";
+import MyCarousel from "../Carousel/MyCarousel.component";
 
 const About = () => {
     return (
-        <div className="flex-col justify-center align-middle bg-black text-white">
-            <h1 className="section-heading text-6xl">About Me</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Reprehenderit, dolorem. Repellendus, dolore. Libero magni soluta
-                natus eum, hic recusandae eligendi, quaerat, ratione nam nobis
-                culpa labore? Maxime dolorum, provident velit et doloribus
-                dolorem pariatur vitae. Quos quidem eius itaque voluptatum?
+        <div className="flex-col pt-28 justify-center align-middle bg-black text-white">
+            <h1 className="section-heading text-6xl text-center mb-24">
+                About Me
+            </h1>
+            <p className="section-text px-36 text-xl my-10">
+                Hey there! I'm Parth Sarathi Dixit, currently progressing
+                through my sophomore year at the LNM Institute of Information
+                and Technology. With an insatiable curiosity for all things
+                tech, I'm deeply passionate about exploring the dynamic realms
+                of web development, machine learning, deep learning, UI/UX
+                design, graphic design, and even dabble a bit in 3D modeling.
+            </p>
+            <MyCarousel />
+            <p className="section-text px-36 text-xl my-10">
+                Learning never stops. I have always kept myself occupied with
+                exploring and learning new things.
             </p>
         </div>
     );

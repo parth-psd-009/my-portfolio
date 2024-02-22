@@ -1,22 +1,26 @@
-import { useState } from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.component";
-import Vector1 from "../public/assets/vector-bg-top-left.svg";
 import Hero from "./components/Hero/Hero.component";
 import About from "./components/About/About.component";
+import Stacks from "./components/Stacks/Stacks.component";
 
 function App() {
     return (
-        <div className="main-div bg-black text-white">
-            {/* <img
-                src={Vector1}
-                alt=""
-                className="vector-top-right absolute z-10 opacity-25 "
-            /> */}
-            <Navbar />
-            <Hero />
-            <About />
-        </div>
+        <Router>
+            <div className="main-div bg-black text-white">
+                <Navbar />
+                <div id="hero">
+                    <Hero />
+                </div>
+                <div id="about">
+                    <About />
+                </div>
+                <div id="stacks">
+                    <Stacks />
+                </div>
+            </div>
+        </Router>
     );
 }
 

@@ -30,12 +30,13 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="navbar-link text-gray-100">
-                    <Link
+                    <a
+                        href="https://medium.com/@saarthee"
                         to="/blog"
                         className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
                     >
                         Blog
-                    </Link>
+                    </a>
                 </div>
                 <div className="navbar-link text-gray-100">
                     <a

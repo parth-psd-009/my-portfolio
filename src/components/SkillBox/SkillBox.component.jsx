@@ -1,18 +1,32 @@
 import React, { useState } from "react";
-import "./SkillBox.styls.css";
+import "./SkillBox.style.css"; // Assuming you have a CSS file for styling
 
 const SkillBox = ({ skillBw, skillColor }) => {
     const [hover, setHover] = useState(false);
+
     return (
         <div
-            className="skill-container"
+            className="skill-container bg-black"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
             <img
-                src={hover ? skillColor : skillBw}
+                src={skillBw}
                 alt=""
-                className={hover ? "skill-img-hover" : "skill-img"}
+                className={
+                    hover
+                        ? "skill-img-hidden  rounded-md"
+                        : "skill-img  rounded-md"
+                }
+            />
+            <img
+                src={skillColor}
+                alt=""
+                className={
+                    hover
+                        ? "skill-img  rounded-md"
+                        : "skill-img-hidden  rounded-md"
+                }
             />
         </div>
     );

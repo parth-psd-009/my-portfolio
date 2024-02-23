@@ -1,0 +1,15 @@
+.skill-container {
+    position: relative;
+}
+
+.skill-img,
+.skill-img-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out; /* Define the transition effect */
+}
+
+.skill-img-hidden {
+    opacity: 0;
+}

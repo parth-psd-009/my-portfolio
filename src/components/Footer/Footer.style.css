@@ -1,0 +1,7 @@
+.social-img {
+    transition: 300ms ease-in-out;
+}
+
+.social-img:hover {
+    opacity: 0.7;
+}

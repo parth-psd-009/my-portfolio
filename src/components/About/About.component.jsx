@@ -17,7 +17,7 @@ const About = () => {
                 design, graphic design, and even dabble a bit in 3D modeling.
             </p>
             <MyCarousel />
-            <p className="section-text px-36 text-xl my-10">
+            <p className="section-text px-36 text-xl mt-10">
                 Learning never stops. I have always kept myself occupied with
                 exploring and learning new things.
             </p>

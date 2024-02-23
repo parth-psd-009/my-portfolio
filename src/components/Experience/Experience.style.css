@@ -1,0 +1,12 @@
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ffffff7d, rgb(45, 45, 45));
+    transition: 500ms ease-in-out;
+}
+
+.exp-container:hover {
+    transform: scale(1.05);
+}

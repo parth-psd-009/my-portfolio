@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/Navbar.component";
 import Hero from "./components/Hero/Hero.component";
 import About from "./components/About/About.component";
 import Stacks from "./components/Stacks/Stacks.component";
+import Experiences from "./components/Experiences/Experiences.component";
+import Footer from "./components/Footer/Footer.component";
 
 function App() {
     return (
@@ -16,8 +18,14 @@ function App() {
                 <div id="about">
                     <About />
                 </div>
-                <div id="stacks">
+                {/* <div id="stacks">
                     <Stacks />
+                </div> */}
+                <div id="experiences">
+                    <Experiences />
+                </div>
+                <div id="footer">
+                    <Footer />
                 </div>
             </div>
         </Router>

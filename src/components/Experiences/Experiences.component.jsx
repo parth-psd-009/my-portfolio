@@ -1,6 +1,7 @@
 import React from "react";
 import Experience from "../Experience/Experience.component";
 import IEEE from "../../../public/assets/ieee.svg";
+import GDSC from "../../../public/assets/gdsc_logo.svg";
 
 const Experiences = () => {
     return (
@@ -16,7 +17,7 @@ const Experiences = () => {
                     description="Web developer at IEEE"
                 />
                 <Experience
-                    logo={IEEE}
+                    logo={GDSC}
                     heading="Member of GDSC"
                     duration="August 2023 - Present"
                     description="Member of GDSC"

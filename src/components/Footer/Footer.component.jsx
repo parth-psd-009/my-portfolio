@@ -11,10 +11,10 @@ import LinkedinHover from "../../../public/assets/linkedin-fill.svg";
 const Footer = () => {
     const [hover, setHover] = useState(false);
     return (
-        <div className="flex-col justify-center items-center align-middle text-center px-36">
-            <hr className="opacity-35 mb-36" />
-            <h1 className="text-4xl font-bold">Get in Touch</h1>
-            <div className="flex justify-center align-middle my-8 px-4">
+        <div className="flex-col -mt-1 justify-center items-center align-middle text-center px-36 bg-black">
+            <hr className="opacity-35 mb-16 md:mb-28" />
+            <h1 className="text-3xl align-middle font-bold md:text-4xl ">Get in Touch</h1>
+            <div className="flex justify-center align-middle my-8 px-4 ">
                 <a
                     href="https://www.linkedin.com/in/parth-sarathi-dixit/"
                     target="_blank"
@@ -60,7 +60,7 @@ const Footer = () => {
                 </a>
             </div>
             {/* <div> */}
-            <p className="font-extralight mt-16">
+            <p className="font-extralight mt-12 md:mt-16">
                 Design and Developed by Parth Sarathi Dixit
             </p>
             {/* <img src={Heart} alt="" /> */}

@@ -3,7 +3,7 @@ import "./Experience.style.css";
 
 const Experience = ({ logo, heading, duration, description }) => {
     return (
-        <div className="exp-container px-8 mb-48 rounded-md">
+        <div className="exp-container px-8 w-52 h-96 mb-48 rounded-md md:w-auto ">
             <img src={logo} alt="" className="my-5 bg-transparent" />
             <h1 className="text-2xl font-normal my-5 bg-transparent">
                 {heading}

@@ -12,11 +12,11 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar-container flex justify-between p-12 px-20 align-middle z-20">
-            <div className="navbar-logo-container">
+        <div className="navbar-container flex justify-center md:justify-between p-12 px-20 align-middle z-20">
+            <div className="navbar-logo-container ">
                 <img src={Logo} alt="" className="navbar-logo-img h-8" />
             </div>
-            <div className="navbar-links-container flex justify-between">
+            <div className="navbar-links-container hidden md:flex md:justify-between">
                 <div className="navbar-link text-gray-100">
                     <a
                         href=""

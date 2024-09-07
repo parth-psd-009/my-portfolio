@@ -13,7 +13,7 @@ const Experiences = () => {
                 <Experience
                     logo={IEEE}
                     heading="Member of The IEEE"
-                    duration="April 2023 - Present"
+                    duration="April 2023 - April 2024"
                     description="Web developer at IEEE"
                 />
                 <Experience

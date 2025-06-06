@@ -1,6 +1,6 @@
 import React from "react";
 import Experience from "../Experience/Experience.component";
-import Quizzinga from "../../../public/assets/Quizzinga.png";
+// import Quizzinga from "../../../public/assets/Quizzinga.png";
 import IEEE from "../../../public/assets/ieee.svg";
 import GDSC from "../../../public/assets/gdsc_logo.svg";
 
@@ -17,12 +17,12 @@ const Experiences = () => {
                     duration="April 2023 - April 2024"
                     description="Web developer at IEEE"
                 />
-                <Experience
+{/*                 <Experience
                     logo={Quizzinga}
                     heading="Member of Quizzinga"
                     duration="August 2023 - Present"
                     description="Member of Quizzinga"
-                />
+                /> */}
                 <Experience
                     logo={GDSC}
                     heading="Member of GDSC"

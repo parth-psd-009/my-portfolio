@@ -26,7 +26,7 @@ const Footer = () => {
                         target="_blank"
                     />
                 </a>
-                <a href="https://www.instagram.com/parthsarathidixit/">
+                <a href="https://www.instagram.com/p_t__s_d/">
                     <img
                         src={Instagram}
                         alt=""
@@ -42,7 +42,7 @@ const Footer = () => {
                         target="_blank"
                     />
                 </a>
-                <a href="https://twitter.com/parthsdixit">
+                <a href="https://x.com/parth_sd20_09">
                     <img
                         src={Twitter}
                         alt=""

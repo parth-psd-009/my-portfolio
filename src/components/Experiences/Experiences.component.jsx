@@ -17,6 +17,12 @@ const Experiences = () => {
                     description="Web developer at IEEE"
                 />
                 <Experience
+                    logo={IEEE}
+                    heading="Member of Quizzinga"
+                    duration="August 2023 - Present"
+                    description="Member of Quizzinga"
+                />
+                <Experience
                     logo={GDSC}
                     heading="Member of GDSC"
                     duration="August 2023 - Present"

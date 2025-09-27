@@ -61,10 +61,6 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-link text-gray-100">
                     <a
-                        onClick={(e) => {
-                            e.preventDefault();
-                            // scrollToSection("footer");
-                        }}
                         href="buymeacoffee.com/parthsarathidixit"
                         className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
                     >

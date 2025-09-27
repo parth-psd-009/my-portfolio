@@ -9,12 +9,9 @@ const About = () => {
                 About Me
             </h1>
             <p className="section-text px-6 text-base text-center my-10 md:px-36 md:text-xl md:my-10">
-                Hey there! I'm Parth Sarathi Dixit, currently progressing
-                through my sophomore year at the LNM Institute of Information
-                and Technology. With an insatiable curiosity for all things
-                tech, I'm deeply passionate about exploring the dynamic realms
-                of web development, machine learning, deep learning, UI/UX
-                design, graphic design, and even dabble a bit in 3D modeling.
+                Hi, I’m Parth Sarathi Dixit, a final-year student at the LNM Institute of Information Technology. 
+                I have a strong interest in technology and love learning by exploring different fields. My main focus areas are web development, 
+                machine learning, and deep learning, but I also enjoy working on UI/UX design, graphic design, and 3D modeling.
             </p>
             <MyCarousel />
             <p className="section-text px-6 text-center text-sm mt-10 md:mt-10 md:px-36 md:text-xl">

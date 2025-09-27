@@ -63,6 +63,7 @@ const Navbar = () => {
                     <a
                         href="https://buymeacoffee.com/parthsarathidixit"
                         className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
+                        target="_blank"
                     >
                         Buy me a coffee
                     </a>

@@ -61,7 +61,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-link text-gray-100">
                     <a
-                        href="buymeacoffee.com/parthsarathidixit"
+                        href="https://buymeacoffee.com/parthsarathidixit"
                         className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
                     >
                         Buy me a coffee

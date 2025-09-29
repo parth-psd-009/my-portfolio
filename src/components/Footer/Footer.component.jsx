@@ -7,6 +7,7 @@ import Github from "../../../public/assets/github.svg";
 import Twitter from "../../../public/assets/twitter.svg";
 import Heart from "../../../public/assets/heart.svg";
 import LinkedinHover from "../../../public/assets/linkedin-fill.svg";
+import Wand from "../../../public/assets/wand.svg"; 
 
 const Footer = () => {
     const [hover, setHover] = useState(false);
@@ -56,6 +57,16 @@ const Footer = () => {
                         alt=""
                         className="social-img mx-4 md:mx-2"
                         target="_blank"
+                    />
+                </a>
+                <a 
+                    href="https://open.spotify.com/playlist/0P5qC70RE5y6A7zPHDJUth?si=8058e1a182884649" 
+                    target="_blank"
+                >
+                    <img
+                        src={Wand}
+                        alt="Spotify Playlist"
+                        className="social-img mx-4 md:mx-2"
                     />
                 </a>
             </div>

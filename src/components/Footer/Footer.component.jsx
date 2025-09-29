@@ -60,7 +60,7 @@ const Footer = () => {
                 </a>
             </div>
             {/* <div> */}
-            <p className="font-extralight mt-12 md:mt-16">
+            <p className="font-extralight mt-12 md:mt-16 max-w-md mx-auto">
                 Design and Developed by Parth Sarathi Dixit
             </p>
             {/* <img src={Heart} alt="" /> */}

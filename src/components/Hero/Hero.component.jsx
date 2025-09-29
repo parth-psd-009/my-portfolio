@@ -26,7 +26,7 @@ const Hero = () => {
             href="https://drive.google.com/file/d/1kipeCJeivZDjKvwFIa6CpDKu5Fz06UGo/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 ml-24 md:ml-0 bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+            className="inline-block mt-4 ml-24 md:ml-0 bg-white text-black px-6 py-2 rounded-lg shadow-md hover:bg-black hover:text-white transition duration-300 ease-in-out"
           >
             My Resume
           </a>

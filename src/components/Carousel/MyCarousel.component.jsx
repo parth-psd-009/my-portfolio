@@ -10,7 +10,7 @@ import Web from "../../../public/assets/web.svg";
 const MyCarousel = () => {
     return (
         <Carousel
-            className="p-10 mb-20"
+            className="p-6 mt-10 mb-16"
             infiniteLoop={true}
             showIndicators={false}
             showStatus={false}

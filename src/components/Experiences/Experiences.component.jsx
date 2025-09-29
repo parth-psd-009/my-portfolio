@@ -7,7 +7,10 @@ import GDSC from "../../../public/assets/gdsc_logo.svg";
 const Experiences = () => {
     return (
         <div className="bg-black md:px-36	">
-            <h1 className="text-2xl font-extrabold text-center mb-24 pt-24 md:pt-48 md:mb-24 md:font-extrabold md:text-6xl">
+            {/* <h1 className="text-2xl font-extrabold text-center mb-24 pt-24 md:pt-48 md:mb-24 md:font-extrabold md:text-6xl">
+                Experiences
+            </h1> */}
+            <h1 className="text-2xl font-extrabold text-center mb-16 pt-12 md:pt-24 md:mb-16 md:text-6xl">
                 Experiences
             </h1>
             <div className="flex items-center flex-col md:flex-row md:justify-evenly lg:justify-between">

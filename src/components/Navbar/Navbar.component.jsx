@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Navbar.styles.css";
 import Logo from "../../../public/assets/Logo.svg";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const scrollToSection = (id) => {
@@ -32,8 +31,8 @@ const Navbar = () => {
                 <div className="navbar-link text-gray-100">
                     <a
                         href="https://medium.com/@saarthee"
-                        to="/blog"
                         className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
+                        target="_blank"
                     >
                         Blog
                     </a>
@@ -48,15 +47,6 @@ const Navbar = () => {
                         className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
                     >
                         Contact
-                    </a>
-                </div>
-                <div className="navbar-link text-gray-100">
-                    <a
-                        href="https://drive.google.com/file/d/1kipeCJeivZDjKvwFIa6CpDKu5Fz06UGo/view?usp=drive_link" 
-                        className="text-lg hover:text-gray-400 transition duration-300 ease-in-out"
-                        target="_blank"
-                    >
-                        Resume
                     </a>
                 </div>
                 <div className="navbar-link text-gray-100">

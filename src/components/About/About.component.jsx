@@ -4,7 +4,7 @@ import MyCarousel from "../Carousel/MyCarousel.component";
 
 const About = () => {
     return (
-        <div className="flex-col mt-16 pt-32 justify-center align-middle bg-black text-white">
+        <div className="flex-col pt-32 justify-center align-middle bg-black text-white">
             <h1 className="section-heading text-2xl text-center mb-16 md:mb-24 md:text-6xl">
                 About Me
             </h1>

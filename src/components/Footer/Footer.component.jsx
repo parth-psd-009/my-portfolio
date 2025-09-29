@@ -12,7 +12,7 @@ import Wand from "../../../public/assets/wandwhite.svg";
 const Footer = () => {
     const [hover, setHover] = useState(false);
     return (
-        <div className="flex-col -mt-1 mb-8 justify-center items-center align-middle text-center px-36 bg-black">
+        <div className="flex-col -mt-1 pb-8 justify-center items-center align-middle text-center px-36 bg-black">
             <hr className="opacity-35 mb-16 md:mb-28" />
             <h1 className="text-3xl align-middle font-bold md:text-4xl ">Get in Touch</h1>
             <div className="flex justify-center align-middle my-8 px-4 ">

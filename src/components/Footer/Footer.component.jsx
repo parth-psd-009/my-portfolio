@@ -58,7 +58,7 @@ const Footer = () => {
                         className="social-img mx-4 md:mx-2"
                         target="_blank"
                     />
-                </a>
+                {/* </a>
                 <a 
                     href="https://open.spotify.com/playlist/0P5qC70RE5y6A7zPHDJUth?si=8058e1a182884649" 
                     target="_blank"
@@ -68,7 +68,7 @@ const Footer = () => {
                         alt="Spotify Playlist"
                         className="social-img mx-4 md:mx-2"
                     />
-                </a>
+                </a> */}
             </div>
             {/* <div> */}
             <p className="font-extralight mt-12 md:mt-16 max-w-md mx-auto">

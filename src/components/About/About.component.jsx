@@ -14,9 +14,6 @@ const About = () => {
                 machine learning, and deep learning, but I also enjoy working on UI/UX design, graphic design, and 3D modeling.
             </p>
             <MyCarousel />
-            <p className="section-text px-6 text-center text-sm mt-10 md:mt-10 md:px-36 md:text-xl">
-                
-            </p>
         </div>
     );
 };

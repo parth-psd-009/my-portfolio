@@ -22,7 +22,7 @@ const Footer = () => {
                     <img
                         src={Linkedin}
                         alt=""
-                        className="social-img mx-2"
+                        className="social-img mx-4 md:mx-2"
                         target="_blank"
                     />
                 </a>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <img
                         src={Instagram}
                         alt=""
-                        className="social-img mx-2"
+                        className="social-img mx-4 md:mx-2"
                         target="_blank"
                     />
                 </a>
@@ -38,7 +38,7 @@ const Footer = () => {
                     <img
                         src={Medium}
                         alt=""
-                        className="social-img mx-2"
+                        className="social-img mx-4 md:mx-2"
                         target="_blank"
                     />
                 </a>
@@ -46,7 +46,7 @@ const Footer = () => {
                     <img
                         src={Twitter}
                         alt=""
-                        className="social-img mx-2"
+                        className="social-img mx-4 md:mx-2"
                         target="_blank"
                     />
                 </a>
@@ -54,7 +54,7 @@ const Footer = () => {
                     <img
                         src={Github}
                         alt=""
-                        className="social-img mx-2"
+                        className="social-img mx-4 md:mx-2"
                         target="_blank"
                     />
                 </a>

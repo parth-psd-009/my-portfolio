@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.styles.css";
 import Logo from "../../../public/assets/Logo.svg";
+import PSD from "../../../public/assets/PSD_logo.svg";
 
 const Navbar = () => {
     const scrollToSection = (id) => {
@@ -13,7 +14,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container flex justify-center md:justify-between p-12 px-20 align-middle z-20">
             <div className="navbar-logo-container ">
-                <img src={Logo} alt="" className="navbar-logo-img h-8" />
+                <img src={PSD} alt="" className="navbar-logo-img h-8" />
             </div>
             <div className="navbar-links-container hidden md:flex md:justify-between">
                 <div className="navbar-link text-gray-100">

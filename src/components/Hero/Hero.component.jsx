@@ -47,7 +47,7 @@ const Hero = () => {
             className="headline-container text-2xl text-center mt-12 pt-5 text-black ml-9 w-72 md:text-white md:text-6xl md:w-auto md:text-left md:ml-0 md:mt-4 cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-          >
+          > Hi! I'm
             {displayName}
           </h1>
 

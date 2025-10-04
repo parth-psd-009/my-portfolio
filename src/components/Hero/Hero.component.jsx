@@ -11,32 +11,30 @@ const Hero = () => {
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
+    if (!hovered) {
+      setDisplayName(initialName);
+      return;
+    }
+
     let iteration = 0;
-    const maxIterations = 20;
-    
+    const maxIterations = 20; // Number of steps to reach final name
     const interval = setInterval(() => {
-      iteration++;
       setDisplayName((prev) =>
         prev
           .split("")
-          .map((_, idx) => {
-            if (hovered) {
-              // Hover: randomize until finalName
-              return iteration < maxIterations
+          .map((char, idx) =>
+            idx < finalName.length
+              ? iteration < maxIterations
                 ? characters[Math.floor(Math.random() * characters.length)]
-                : finalName[idx] || "";
-            } else {
-              // Hover out: randomize until initialName
-              return iteration < maxIterations
-                ? characters[Math.floor(Math.random() * characters.length)]
-                : initialName[idx] || "";
-            }
-          })
+                : finalName[idx]
+              : ""
+          )
           .join("")
       );
 
+      iteration++;
       if (iteration > maxIterations) clearInterval(interval);
-    }, 20);
+    }, 20); // change every 20ms
 
     return () => clearInterval(interval);
   }, [hovered]);
@@ -46,14 +44,18 @@ const Hero = () => {
       <div className="heading-container flex-col justify-center z-10 relative">
         <div>
           <h1
-            className="headline-container text-2xl text-center mt-12 pt-5 text-black ml-9 w-72 md:text-white md:text-6xl md:w-auto md:text-left md:ml-0 md:mt-4 cursor-pointer"
+            className="headline-container text-2xl text-center mt-12 pt-5 text-black ml-9 w-72 
+                       md:text-white md:text-6xl md:w-auto md:text-left md:ml-0 md:mt-4 cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
             Hi! I'm {displayName}
           </h1>
 
-          <p className="description-container text-black ml-20 w-52 text-lg font-medium mt-4 md:font-light md:ml-0 md:w-auto md:mt-4 md:text-white md:text-3xl">
+          <p
+            className="description-container text-black ml-20 w-52 text-lg font-medium mt-4 
+                       md:font-light md:ml-0 md:w-auto md:mt-4 md:text-white md:text-3xl"
+          >
             A passionate learner and a tech enthusiast.
           </p>
 
@@ -65,7 +67,8 @@ const Hero = () => {
             href="https://drive.google.com/file/d/1kipeCJeivZDjKvwFIa6CpDKu5Fz06UGo/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 ml-24 md:ml-0 bg-white text-black px-6 py-2 rounded-lg shadow-md hover:bg-black hover:text-white transition duration-300 ease-in-out"
+            className="inline-block mt-4 ml-24 md:ml-0 bg-white text-black px-6 py-2 rounded-lg shadow-md 
+                       hover:bg-black hover:text-white transition duration-300 ease-in-out"
           >
             My Resume
           </a>

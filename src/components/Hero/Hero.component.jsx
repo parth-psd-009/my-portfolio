@@ -11,30 +11,32 @@ const Hero = () => {
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
-    if (!hovered) {
-      setDisplayName(initialName);
-      return;
-    }
-
     let iteration = 0;
-    const maxIterations = 20; // Number of steps to reach final name
+    const maxIterations = 20;
+    
     const interval = setInterval(() => {
+      iteration++;
       setDisplayName((prev) =>
         prev
           .split("")
-          .map((char, idx) =>
-            idx < finalName.length
-              ? iteration < maxIterations
+          .map((_, idx) => {
+            if (hovered) {
+              // Hover: randomize until finalName
+              return iteration < maxIterations
                 ? characters[Math.floor(Math.random() * characters.length)]
-                : finalName[idx]
-              : ""
-          )
+                : finalName[idx] || "";
+            } else {
+              // Hover out: randomize until initialName
+              return iteration < maxIterations
+                ? characters[Math.floor(Math.random() * characters.length)]
+                : initialName[idx] || "";
+            }
+          })
           .join("")
       );
 
-      iteration++;
       if (iteration > maxIterations) clearInterval(interval);
-    }, 20); // change every 50ms
+    }, 20);
 
     return () => clearInterval(interval);
   }, [hovered]);
@@ -47,7 +49,9 @@ const Hero = () => {
             className="headline-container text-2xl text-center mt-12 pt-5 text-black ml-9 w-72 md:text-white md:text-6xl md:w-auto md:text-left md:ml-0 md:mt-4 cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-          > Hi! I'm  {displayName} </h1>
+          >
+            Hi! I'm {displayName}
+          </h1>
 
           <p className="description-container text-black ml-20 w-52 text-lg font-medium mt-4 md:font-light md:ml-0 md:w-auto md:mt-4 md:text-white md:text-3xl">
             A passionate learner and a tech enthusiast.

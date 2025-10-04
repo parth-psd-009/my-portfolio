@@ -4,7 +4,7 @@ import ProfilePic from "../../../public/assets/Profile.svg";
 
 const Hero = () => {
   const finalName = "Parth";
-  const initialName = "|*/-\\|2+|-|";
+  const initialName = "|* /-\\ |2 + |-|";
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|*/-+";
 
   const [displayName, setDisplayName] = useState(initialName);

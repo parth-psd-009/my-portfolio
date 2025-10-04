@@ -6,14 +6,14 @@ import About from "./components/About/About.component";
 import Stacks from "./components/Stacks/Stacks.component";
 import Experiences from "./components/Experiences/Experiences.component";
 import Footer from "./components/Footer/Footer.component";
-import BlobBackground from "./components/BlobBackground/BlobBackground.component"; 
+// import BlobBackground from "./components/BlobBackground/BlobBackground.component"; 
 
 function App() {
     return (
         <Router>
             <div className="main-div bg-black text-white">
                 {/* Blob background */}
-                <BlobBackground />
+                {/* <BlobBackground /> */}
 
                 <Navbar />
 

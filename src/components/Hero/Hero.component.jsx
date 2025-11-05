@@ -64,7 +64,7 @@ const Hero = () => {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1kipeCJeivZDjKvwFIa6CpDKu5Fz06UGo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1-lUs0lKC4ubOeBkWqQxcnWKUBRE8OLsO/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 ml-24 md:ml-0 bg-white text-black px-6 py-2 rounded-lg shadow-md 

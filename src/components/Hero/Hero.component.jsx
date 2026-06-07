@@ -59,7 +59,10 @@ const Hero = () => {
             A passionate learner and a tech enthusiast.
           </p>
 
-          <p className="text-sm mt-2 text-black ml-24 md:text-white md:mt-8 md:text-xl md:ml-0">
+          <p
+            className="text-sm mt-2 text-black ml-24 md:text-white md:mt-8 md:text-xl md:ml-0 cursor-pointer"
+            onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+          >
             Know more about me...
           </p>
 

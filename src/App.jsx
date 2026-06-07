@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer.component";
 function App() {
     return (
         <Router>
-            <div className="main-div bg-black text-white">
+            <div className="main-div bg-black text-white pt-28">
                 {/* Blob background */}
                 {/* <BlobBackground /> */}
 

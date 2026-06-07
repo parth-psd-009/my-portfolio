@@ -14,6 +14,7 @@ const MyCarousel = () => {
             infiniteLoop={true}
             showIndicators={false}
             showStatus={false}
+            showThumbs={false}
             autoPlay={true}
             interval={1000}
             stopOnHover={true}

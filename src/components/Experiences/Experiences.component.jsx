@@ -29,7 +29,7 @@ const Experiences = () => {
                 <Experience
                     logo={GDSC}
                     heading="Member of GDSC"
-                    duration="August 2023 - Present"
+                    duration="August 2023 - December 2025"
                     description="Member of GDSC"
                 />
             </div>

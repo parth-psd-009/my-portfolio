@@ -4,7 +4,7 @@ import "./Experience.style.css";
 const Experience = ({ logo, heading, duration, description }) => {
     return (
         <div className="exp-container px-8 w-52 h-96 mb-48 rounded-md md:w-auto ">
-            <img src={logo} alt="" className="my-5 bg-transparent" />
+            <img src={logo} alt="" className="my-5 bg-transparent h-16 w-auto object-contain grayscale brightness-150" />
             <h1 className="text-2xl font-normal my-5 bg-transparent">
                 {heading}
             </h1>

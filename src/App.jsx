@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero.component";
 import About from "./components/About/About.component";
 import Stacks from "./components/Stacks/Stacks.component";
 import Experiences from "./components/Experiences/Experiences.component";
+import Internships from "./components/Internships/Internships.component";
 import Footer from "./components/Footer/Footer.component";
 // import BlobBackground from "./components/BlobBackground/BlobBackground.component"; 
 
@@ -28,6 +29,10 @@ function App() {
                 {/* <div id="stacks">
                     <Stacks />
                 </div> */}
+
+                <div id="internships">
+                    <Internships />
+                </div>
 
                 <div id="experiences">
                     <Experiences />

@@ -56,7 +56,7 @@ const Hero = () => {
             className="description-container text-black ml-20 w-52 text-lg font-medium mt-4 
                        md:font-light md:ml-0 md:w-auto md:mt-4 md:text-white md:text-3xl"
           >
-            A passionate learner and a tech enthusiast.
+            A Software Engineer building end-to-end systems.
           </p>
 
           <p

@@ -9,9 +9,9 @@ const About = () => {
                 About Me
             </h1>
             <p className="section-text px-6 text-base text-center md:px-36 md:text-xl md:my-10">
-                Hi, I’m Parth Sarathi Dixit, a final-year student at the LNM Institute of Information Technology. 
-                I have a strong interest in technology and love learning by exploring different fields. My main focus areas are web development, 
-                machine learning, and deep learning, but I also enjoy working on UI/UX design, graphic design, and 3D modeling.
+                Hi, I’m Parth Sarathi Dixit, a Software Engineer at TruEstate in Bangalore and a Computer Science graduate of the LNM Institute of Information Technology.
+                I build end-to-end systems, from scalable backend services and cloud automation to responsive frontends. I also love exploring
+                machine learning, deep learning, UI/UX design, graphic design, and 3D modeling.
             </p>
             <MyCarousel />
         </div>

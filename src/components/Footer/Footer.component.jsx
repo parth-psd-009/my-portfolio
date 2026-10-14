@@ -4,6 +4,7 @@ import Linkedin from "../../../public/assets/linkedin.svg";
 import Instagram from "../../../public/assets/insta.svg";
 import Medium from "../../../public/assets/medium.svg";
 import Github from "../../../public/assets/github.svg";
+import Leetcode from "../../../public/assets/leetcode.svg";
 import Twitter from "../../../public/assets/twitter.svg";
 import Heart from "../../../public/assets/heart.svg";
 import LinkedinHover from "../../../public/assets/linkedin-fill.svg";
@@ -59,6 +60,13 @@ const Footer = () => {
                         target="_blank"
                     />
                 </a>
+                <a href="https://leetcode.com/u/D_SArathi/" target="_blank">
+                    <img
+                        src={Leetcode}
+                        alt="LeetCode"
+                        className="social-img mx-4 md:mx-2"
+                    />
+                </a>
                 <a 
                     href="https://open.spotify.com/playlist/0P5qC70RE5y6A7zPHDJUth?si=8058e1a182884649" 
                     target="_blank"
@@ -68,8 +76,14 @@ const Footer = () => {
                         alt="Spotify Playlist"
                         className="social-img mx-4 md:mx-2"
                     />
-                </a> 
+                </a>
             </div>
+            <a
+                href="mailto:dixitparthsarathi@gmail.com"
+                className="social-img font-light text-sm break-all md:text-lg"
+            >
+                dixitparthsarathi@gmail.com
+            </a>
             {/* <div> */}
             <p className="font-extralight mt-12 md:mt-16 max-w-md mx-auto">
                 Design and Developed by Parth Sarathi Dixit

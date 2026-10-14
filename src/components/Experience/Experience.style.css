@@ -10,3 +10,96 @@
 .exp-container:hover {
     transform: scale(1.05);
 }
+
+.themed-card {
+    position: relative;
+    isolation: isolate;
+}
+
+.themed-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--card-bg);
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.themed-card:hover {
+    color: var(--card-text, inherit);
+    box-shadow: 0 12px 40px var(--card-glow);
+}
+
+.themed-card:hover::before {
+    opacity: 1;
+}
+
+.themed-card img {
+    transition: filter 500ms ease-in-out;
+}
+
+.themed-card:hover img {
+    filter: none;
+}
+
+.themed-card h1 {
+    background-image: var(--card-underline);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 2px;
+    transition: background-size 500ms ease-in-out;
+}
+
+.themed-card:hover h1 {
+    background-size: 100% 2px;
+}
+
+.themed-card p,
+.themed-card h2 {
+    transition: color 500ms ease-in-out;
+}
+
+.themed-card:hover p,
+.themed-card:hover h2 {
+    color: var(--card-muted, inherit);
+}
+
+.theme-truestate {
+    --card-bg: #f7f4ec;
+    --card-text: #0a3d2e;
+    --card-muted: #3b4a42;
+    --card-glow: rgba(245, 196, 94, 0.25);
+    --card-underline: linear-gradient(#f5c45e, #f5c45e);
+}
+
+.theme-auralis {
+    --card-bg: linear-gradient(to top, #a855f74d, #1c1426);
+    --card-glow: rgba(168, 85, 247, 0.25);
+    --card-underline: linear-gradient(#a855f7, #a855f7);
+}
+
+.theme-lobbie {
+    --card-bg: linear-gradient(to top, #ef44444d, #261414);
+    --card-glow: rgba(239, 68, 68, 0.25);
+    --card-underline: linear-gradient(#ef4444, #ef4444);
+}
+
+.theme-linkedin {
+    --card-bg: linear-gradient(to top, #0a66c24d, #0f1a26);
+    --card-glow: rgba(10, 102, 194, 0.3);
+    --card-underline: linear-gradient(#0a66c2, #0a66c2);
+}
+
+.theme-ieee {
+    --card-bg: linear-gradient(to top, #00629b4d, #0d1a24);
+    --card-glow: rgba(0, 98, 155, 0.3);
+    --card-underline: linear-gradient(#00629b, #00629b);
+}
+
+.theme-gdsc {
+    --card-bg: linear-gradient(to top, #4285f426, #1a1a1a);
+    --card-glow: rgba(66, 133, 244, 0.2);
+    --card-underline: linear-gradient(90deg, #4285f4 0 25%, #ea4335 25% 50%, #fbbc05 50% 75%, #34a853 75%);
+}

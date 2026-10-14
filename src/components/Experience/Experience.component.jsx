@@ -1,9 +1,9 @@
 import React from "react";
 import "./Experience.style.css";
 
-const Experience = ({ logo, heading, duration, description, links }) => {
+const Experience = ({ logo, heading, duration, description, links, className = "" }) => {
     return (
-        <div className="exp-container px-8 py-4 w-52 min-h-96 mb-48 rounded-md text-center md:w-auto ">
+        <div className={`exp-container px-8 py-4 w-52 min-h-[32rem] mb-48 md:min-h-96 rounded-md text-center md:w-96 lg:w-auto lg:flex-1 ${className}`}>
             {logo && <img src={logo} alt="" className="my-5 bg-transparent h-16 w-auto object-contain grayscale brightness-150" />}
             <h1 className="text-2xl font-normal my-5 bg-transparent">
                 {heading}

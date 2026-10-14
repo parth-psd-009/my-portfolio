@@ -7,9 +7,10 @@ const Projects = () => {
             <h1 className="text-2xl font-extrabold text-center mb-16 pt-12 md:pt-24 md:mb-16 md:text-6xl">
                 Projects
             </h1>
-            <div className="flex items-center justify-center flex-col lg:flex-row lg:justify-between lg:gap-8">
+            <div className="flex items-center justify-center flex-col lg:flex-row lg:items-stretch lg:gap-8">
                 <Experience
                     heading="Auralis"
+                    className="themed-card theme-auralis"
                     duration="React, Node.js, JWT"
                     description="Social media app with timelines, threaded replies and community-targeted posts"
                     links={[
@@ -19,6 +20,7 @@ const Projects = () => {
                 />
                 <Experience
                     heading="Lobbie"
+                    className="themed-card theme-lobbie"
                     duration="React, Node.js, MySQL, Redis"
                     description="College event management platform with role-based access and Redis caching"
                     links={[
@@ -29,6 +31,7 @@ const Projects = () => {
                 />
                 <Experience
                     heading="LinkedIn Clone"
+                    className="themed-card theme-linkedin"
                     duration="Spring Boot, Kafka, Neo4j"
                     description="Event-driven microservices backend with an API gateway and a connection graph"
                     links={[

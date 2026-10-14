@@ -13,9 +13,10 @@ const Experiences = () => {
             <h1 className="text-2xl font-extrabold text-center mb-16 pt-12 md:pt-24 md:mb-16 md:text-6xl">
                 Experiences
             </h1>
-            <div className="flex items-center flex-col md:flex-row md:justify-evenly lg:justify-between">
+            <div className="flex items-center justify-center flex-col lg:flex-row lg:items-stretch lg:gap-8">
                 <Experience
                     logo={IEEE}
+                    className="themed-card theme-ieee"
                     heading="Member of The IEEE"
                     duration="April 2023 - April 2024"
                     description="Web developer at IEEE"
@@ -28,6 +29,7 @@ const Experiences = () => {
                 /> */}
                 <Experience
                     logo={GDSC}
+                    className="themed-card theme-gdsc"
                     heading="Member of GDSC"
                     duration="August 2023 - December 2025"
                     description="Member of GDSC"

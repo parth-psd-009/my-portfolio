@@ -5,6 +5,7 @@ import Instagram from "../../../public/assets/insta.svg";
 import Medium from "../../../public/assets/medium.svg";
 import Github from "../../../public/assets/github.svg";
 import Leetcode from "../../../public/assets/leetcode.svg";
+import LeetcodeColor from "../../../public/assets/leetcode-color.svg";
 import Twitter from "../../../public/assets/twitter.svg";
 import Heart from "../../../public/assets/heart.svg";
 import LinkedinHover from "../../../public/assets/linkedin-fill.svg";
@@ -21,60 +22,62 @@ const Footer = () => {
                     href="https://www.linkedin.com/in/parth-sarathi-dixit/"
                     target="_blank"
                 >
-                    <img
-                        src={Linkedin}
-                        alt=""
-                        className="social-img mx-4 md:mx-2"
-                        target="_blank"
+                    <span
+                        role="img"
+                        aria-label="LinkedIn"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Linkedin}")`, "--hover": "linear-gradient(135deg, #0a66c2, #0077b5)" }}
                     />
                 </a>
-                <a href="https://www.instagram.com/p_t__s_d/">
-                    <img
-                        src={Instagram}
-                        alt=""
-                        className="social-img mx-4 md:mx-2"
-                        target="_blank"
+                <a href="https://www.instagram.com/p_t__s_d/" target="_blank">
+                    <span
+                        role="img"
+                        aria-label="Instagram"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Instagram}")`, "--hover": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)" }}
                     />
                 </a>
-                <a href="https://medium.com/@saarthee">
-                    <img
-                        src={Medium}
-                        alt=""
-                        className="social-img mx-4 md:mx-2"
-                        target="_blank"
+                <a href="https://medium.com/@saarthee" target="_blank">
+                    <span
+                        role="img"
+                        aria-label="Medium"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Medium}")`, "--hover": "linear-gradient(135deg, #00ab6c, #1a8917)" }}
                     />
                 </a>
-                <a href="https://x.com/parth_sd20_09">
-                    <img
-                        src={Twitter}
-                        alt=""
-                        className="social-img mx-4 md:mx-2"
-                        target="_blank"
+                <a href="https://x.com/parth_sd20_09" target="_blank">
+                    <span
+                        role="img"
+                        aria-label="X"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Twitter}")`, "--hover": "linear-gradient(135deg, #1da1f2, #0c85d0)" }}
                     />
                 </a>
-                <a href="https://github.com/parth-psd-009">
-                    <img
-                        src={Github}
-                        alt=""
-                        className="social-img mx-4 md:mx-2"
-                        target="_blank"
+                <a href="https://github.com/parth-psd-009" target="_blank">
+                    <span
+                        role="img"
+                        aria-label="GitHub"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Github}")`, "--hover": "linear-gradient(135deg, #a371f7, #6e40c9)" }}
                     />
                 </a>
                 <a href="https://leetcode.com/u/D_SArathi/" target="_blank">
-                    <img
-                        src={Leetcode}
-                        alt="LeetCode"
-                        className="social-img mx-4 md:mx-2"
+                    <span
+                        role="img"
+                        aria-label="LeetCode"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Leetcode}")`, "--hover": `url("${LeetcodeColor}") center / contain no-repeat` }}
                     />
                 </a>
                 <a 
                     href="https://open.spotify.com/playlist/0P5qC70RE5y6A7zPHDJUth?si=8058e1a182884649" 
                     target="_blank"
                 >
-                    <img
-                        src={Wand}
-                        alt="Spotify Playlist"
-                        className="social-img mx-4 md:mx-2"
+                    <span
+                        role="img"
+                        aria-label="Spotify Playlist"
+                        className="social-icon mx-4 md:mx-2"
+                        style={{ "--icon": `url("${Wand}")`, "--hover": "linear-gradient(135deg, #1ed760, #1db954)" }}
                     />
                 </a>
             </div>

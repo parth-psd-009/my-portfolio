@@ -42,7 +42,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="navbar-container flex justify-center md:justify-between p-12 px-20 align-middle fixed top-0 left-0 w-full bg-black z-50">
+        <div className="navbar-container flex justify-center md:justify-between py-8 px-20 align-middle fixed top-0 left-0 w-full bg-black z-50">
             <div className="navbar-logo-container">
                 <img src={PSD} alt="" className="navbar-logo-img h-8" />
             </div>

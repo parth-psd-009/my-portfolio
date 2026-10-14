@@ -67,11 +67,13 @@
 }
 
 .theme-truestate {
-    --card-bg: #f7f4ec;
-    --card-text: #0a3d2e;
-    --card-muted: #3b4a42;
-    --card-glow: rgba(245, 196, 94, 0.25);
+    --card-bg: linear-gradient(to top, #0a7a4a4d, #0c1410);
+    --card-glow: rgba(10, 122, 74, 0.3);
     --card-underline: linear-gradient(#f5c45e, #f5c45e);
+}
+
+.theme-truestate:hover img {
+    filter: brightness(1.8);
 }
 
 .theme-auralis {

@@ -40,6 +40,8 @@ const SKILL_GROUPS = [
             { name: "Linux", icon: "linux" },
             { name: "Docker", icon: "docker" },
             { name: "Redis", icon: "redis" },
+            { name: "Algolia", icon: "algolia" },
+            { name: "Typesense", icon: "typesense" },
         ],
     },
 ];

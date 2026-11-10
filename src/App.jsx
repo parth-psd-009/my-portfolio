@@ -27,12 +27,12 @@ function App() {
                     <About />
                 </div>
 
-                <div id="skills">
-                    <Stacks />
-                </div>
-
                 <div id="internships">
                     <Internships />
+                </div>
+
+                <div id="skills">
+                    <Stacks />
                 </div>
 
                 <div id="projects">

@@ -1,15 +1,99 @@
-.skill-container {
+/* Tile background matches the Figma skill tiles: black fading to 13% white.
+   On hover the gradient flips (white at the top), like the Figma colour variants. */
+.skill-tile {
     position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background-color: #000;
+    background-image: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0.13) 100%);
+    transition: border-color 0.3s ease;
 }
 
-.skill-img,
-.skill-img-hidden {
+/* Gradients can't animate directly, so the flipped one fades in on top. */
+.skill-tile::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease-in-out; /* Define the transition effect */
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.13) 0%, #000 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.skill-img-hidden {
-    opacity: 0;
+.skill-tile__logo {
+    width: 46%;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    /* Lower contrast pulls dark logos (MySQL, Docker) and light ones (JS)
+       towards the same mid-grey, so every logo is readable at rest. */
+    filter: grayscale(1) contrast(0.6) brightness(1.3) opacity(0.6);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill-tile__logo--invert {
+    filter: invert(1) grayscale(1) contrast(0.6) brightness(1.3) opacity(0.6);
+}
+
+.skill-tile__name {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #9ca3af;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+/* Hover (and press, for touch screens) */
+.skill-tile:hover,
+.skill-tile:active {
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.skill-tile:hover::before,
+.skill-tile:active::before {
+    opacity: 1;
+}
+
+.skill-tile:hover .skill-tile__logo,
+.skill-tile:active .skill-tile__logo {
+    filter: grayscale(0) contrast(1) brightness(1) opacity(1);
+    transform: scale(1.08);
+}
+
+.skill-tile:hover .skill-tile__logo--invert,
+.skill-tile:active .skill-tile__logo--invert {
+    filter: invert(1) grayscale(0) contrast(1) brightness(1) opacity(1);
+}
+
+.skill-tile:hover .skill-tile__name,
+.skill-tile:active .skill-tile__name {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .skill-tile__name {
+        font-size: 13px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skill-tile,
+    .skill-tile::before,
+    .skill-tile__logo,
+    .skill-tile__name {
+        transition: none;
+    }
+
+    .skill-tile:hover .skill-tile__logo,
+    .skill-tile:active .skill-tile__logo {
+        transform: none;
+    }
 }

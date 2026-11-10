@@ -1,0 +1,61 @@
+/* Group headings, shown as written ("Frameworks and Technologies"). */
+.skill-group-title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d1d5db;
+}
+
+/* Tiles sit almost edge to edge (6px gap) and wrap into centred rows.
+   --per-row caps how many tiles fit on one row at each screen size;
+   on wide screens every group fits on a single row. */
+.skill-grid {
+    --tile: 104px;
+    --gap: 6px;
+    --per-row: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
+    max-width: calc(var(--per-row) * var(--tile) + (var(--per-row) - 1) * var(--gap));
+    margin: 0 auto;
+    list-style: none;
+}
+
+.skill-grid > .skill-tile {
+    width: var(--tile);
+}
+
+@media (min-width: 768px) {
+    .skill-grid {
+        --tile: 112px;
+        --per-row: 5;
+    }
+
+    .skill-group-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skill-grid {
+        --tile: 120px;
+        --per-row: 7;
+    }
+}
+
+/* 10 per row so the biggest group (Frameworks) stays on one line. */
+@media (min-width: 1280px) {
+    .skill-grid {
+        --tile: 118px;
+        --per-row: 10;
+    }
+}
+
+@media (min-width: 1440px) {
+    .skill-grid {
+        --tile: 128px;
+    }
+}

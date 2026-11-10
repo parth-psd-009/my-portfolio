@@ -4,6 +4,7 @@ import PSD from "../../../public/assets/PSD_logo.svg";
 
 const NAV_LINKS = [
     { label: "About", id: "about" },
+    { label: "Skills", id: "skills" },
     { label: "Work", id: "internships" },
     { label: "Projects", id: "projects" },
     { label: "Experiences", id: "experiences" },

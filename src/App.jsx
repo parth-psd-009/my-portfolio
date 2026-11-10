@@ -27,9 +27,9 @@ function App() {
                     <About />
                 </div>
 
-                {/* <div id="stacks">
+                <div id="skills">
                     <Stacks />
-                </div> */}
+                </div>
 
                 <div id="internships">
                     <Internships />

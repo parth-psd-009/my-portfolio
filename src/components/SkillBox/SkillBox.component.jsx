@@ -1,34 +1,25 @@
-import React, { useState } from "react";
-import "./SkillBox.style.css"; // Assuming you have a CSS file for styling
+import React from "react";
+import "./SkillBox.style.css";
 
-const SkillBox = ({ skillBw, skillColor }) => {
-    const [hover, setHover] = useState(false);
-
+// One skill tile: the logo shows in grayscale by default and turns to full
+// colour on hover. `invert` is for logos that are solid black (e.g. Express),
+// so they stay visible on the dark tile.
+const SkillBox = ({ name, icon, invert = false }) => {
     return (
-        <div
-            className="skill-container bg-black"
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-        >
+        <li className="skill-tile">
             <img
-                src={skillBw}
+                src={icon}
                 alt=""
+                loading="lazy"
+                draggable="false"
                 className={
-                    hover
-                        ? "skill-img-hidden  rounded-md"
-                        : "skill-img  rounded-md"
+                    invert
+                        ? "skill-tile__logo skill-tile__logo--invert"
+                        : "skill-tile__logo"
                 }
             />
-            <img
-                src={skillColor}
-                alt=""
-                className={
-                    hover
-                        ? "skill-img  rounded-md"
-                        : "skill-img-hidden  rounded-md"
-                }
-            />
-        </div>
+            <span className="skill-tile__name">{name}</span>
+        </li>
     );
 };
 
